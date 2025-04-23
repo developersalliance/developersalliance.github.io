@@ -1,527 +1,475 @@
 ---
 layout: default
-title: Developers Alliance - Magento Developers and Support
+
+forms:
+  - to: /
+    subject: New submission!
+    redirect: https://api.web3forms.com/submit
+    form_engine: api.web3forms.com/submit
+    placeholders: true
+    fields: 
+      - name: name
+        input_type: text
+        placeholder: Name
+        required: true
+      - name: email
+        input_type: email
+        placeholder: Email address
+        required: true
+      - name: message
+        input_type: textarea
+        placeholder: Message
+        required: true
+      - name: submit
+        input_type: submit
+        placeholder: Submit form
+        required: true
+
+carousels:
+  - images: 
+      - image: assets/Img/slider-magento-centered.webp
+      - image: assets/Img/slider-hyva-centered.webp
+      - image: assets/Img/slider-shopify-centered.webp
+  - images: 
+      - image: assets/Img/dev1.webp  
+      - image: assets/Img/dev2.webp
+      - image: assets/Img/dev3.webp
+      - image: assets/Img/dev4.webp  
+      - image: assets/Img/dev5.webp 
+  - images: 
+      - image: assets/Img/logo-sylius.webp  
+      - image: assets/Img/logo-mage-os-logo.webp
+      - image: assets/Img/logo-macademy.webp
+      - image: assets/Img/logo-magentoassociation.webp  
+      - image: assets/Img/logo-hyva.webp
+      - image: assets/Img/logo-bdo.webp
+      - image: assets/Img/logo-magento.webp
+      - image: assets/Img/logo-bedford.webp 
+  - texts:
+    - heading: "Gian Genovesi"
+      subheading: "Briteskies.com"
+      text: "Developers Alliance is a great partner."
+    - heading: "Laura Folco"
+      subheading: "lfolco.com"
+      text: "I hired a couple developers to help me out on a project. They were very professional."
+    - heading: "Michael Hubner"
+      subheading: "Common GmbH"
+      text: "Developers Alliance helped us with migration. Their approach was very efficient and thorough."
+    - heading: "Chuck Jacobs"
+      subheading: "Jacobs Web Design"
+      text: My first experience with remote developers.
+    - heading: "Alexander Pedersen"
+      subheading: "Blimp DK"
+      text: Oskars team were very responsive and produced quality work. They met a very tight deadline with our ReactJs App project.
+    - heading: "Shani Dadon"
+      subheading: "Adikastyle.com"
+      text: Thanks for the amazing support, really. It was invaluable for solving our problems.
+    - heading: "Danel Lerch"
+      subheading: "erply.com"
+      text: Well this stuff works. My tasks are sometimes quite messed up and things change a lot, it can be quite irritating but DevAll guys can handle it well. I have worked with them already four years, and with their good, consistent work, I am for sure continuing our work together.
 ---
-<div class="main-container">
-    <section class="pt160 pb120 image-bg overlay parallax homepage-top header header-section" style="background: #fff;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h1 class="mb16">Developers Alliance<span style="color:#e13d3a">/</span><br></h1>
-                </div>
-            </div>
+
+<main>
+    <section class="container-header seperation-redline">
+        <div class="header center">
+            <h1 class="mb16">Developers</h1> 
+            <div class="center">
+                <h2 class="mb16">Alliance</h2>
+                <span class="redline">/</span>  
+            </div>  
         </div>
-        <div class="row" style="position: absolute; bottom: 80px; width:100%; text-align: center; padding-bottom:20px;"><br>
-            <div class="col-sm-12 text-center">
-                <h3>Certified Developer Services for Agencies and Merchants.</h3>
-            </div>
-        </div>
-        <div class="row" style="position: absolute; bottom: 10px; width:100%; text-align: center;"><br>
-            <div class="col-sm-12 text-center">
-                <img src="assets/Img/cert1.webp" style="height: 60px; padding-right:5px;">
-                <img src="assets/Img/cert2.webp" style="height: 60px; padding-right:5px;">
-                <img src="assets/Img/cert3.webp" style="height: 60px;">
-            </div>
+        <h3 class="mb17">Certified Developer Services for Agencies and Merchants</h3>
+        <div class="col-sm-12 text-center center">
+            <img src="assets/Img/cert2.webp">
+            <img src="assets/Img/cert1.webp">
+            <img src="assets/Img/cert3.webp">
         </div>
     </section>
-    <div style="height:3px; width: 100%; background:#e13d3a;"></div>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-push-3 text-center">
-                    <div class="image-slider slider-paging-controls controls-outside">
-                        <ul class="slides">
-                            <li class="mb32">
-                                <img 
-                                src="assets/Img/slider-magento-centered.webp"
-                                alt="App"
-                                width="557"
-                                height="570"
-                                fetchpriority="high"
-                                draggable="false"
-                                >
-                            </li>
-                            <li class="mb32">
-                                <img src="assets/Img/slider-hyva-centered.webp"
-                                draggable="true" 
-                                fetchpriority="high" 
-                                alt="App"
-                                >
-                            </li>
-                            <li class="mb32">
-                                <img src="assets/Img/slider-shopify-centered.webp"
-                                draggable="true" 
-                                fetchpriority="high" 
-                                alt="App"
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-md-pull-6">
-                    <div class="mt80 mt-xs-80 text-right text-left-xs">
-                        <h5 class="uppercase bold mb16">Sustainable Code</h5>
-                        <p class="fade-1-4">
-                            We write code that is easy to maintain and upgrade. We also remove technical debt to keep your software healthy over time.
-                        </p>
-                    </div>
-                    
-                    <div class="mt80 mt-xs-0 text-right text-left-xs">
-                        <h5 class="uppercase bold mb16">Big Picture</h5>
-                        <p class="fade-1-4">
-                            We begin by understanding your business &nbsp;goals. Our developers then turn those ideas into technical projects that fit your vision.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <div class="mt80 mt-xs-0">
-                        <h5 class="uppercase bold mb16">Certified Developers</h5>
-                        <p class="fade-1-4">
-                            We are a learning centered organization that works to improve developer skills. We place a high priority on certifications that show our team’s commitment to quality.
-                        </p>
-                    </div>
-                    
-                    <div class="mt80 mt-xs-0">
-                        <h5 class="uppercase bold mb16">Fast Onboarding</h5>
-                        <p class="fade-1-4">
-                            We can set up your project in less than a month. Our quick process lets your team start working right away.
-                        </p>
-                    </div>
-                </div>
+
+    <section class="seperation-redline">
+        <div class="container-content">
+        <div class="grid-container">
+            <div>
+                <h5 class="bold uppercase">Sustainable Code</h5>
+                <p class="fade-1-4">
+                    We write code that is easy to maintain and upgrade. 
+                    We also remove technical debt to keep your software healthy over time.
+                </p>
             </div>
             
-        </div>
-        
-    </section>
-    <div style="height:3px; width: 100%; background:#e13d3a;"></div>
-    <section class=" ">
-        <div class="container"><h3>The Process</h3><br>
-            <div class="process-2 row">
-                <div class="col-md-3">
-                    <div class="process__item">
-                        <h5>Discovery</h5>
-                        <p>
-                            We start by understanding how your team works and what tools you use. This helps us quickly join your team and begin working together.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="process__item">
-                        <h5>Communication Guidelines</h5>
-                        <p>
-                            We set up clear communication rules that match your team’s needs. This helps everyone stay informed and work together.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="process__item">
-                        <h5>Kickoff Month</h5>
-                        <p>
-                            During the first month, we closely track progress. This helps us spot any problems early and fix them right away.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="process__item">
-                        <h5>Keep Improving</h5>
-                        <p>
-                            We continually update our process by taking in 360 feedback. That lets us spot problems early and fix them fast.
-                        </p>
-                    </div>
-                </div>
+            <div>
+                <h5 class="bold uppercase">Big Picture</h5>
+                <p class="fade-1-4">
+                    We begin by understanding your business &nbsp;goals.
+                    Our developers then turn those ideas into technical projects that fit your vision.
+                </p>
             </div>
-            <div class="row"><br>
-                <div class="text-center"><a class="btn btn-filled btn-lg mb0" href="#contacts">Get Started</a></div>
-            </div>
-            <!--end process-->
         </div>
-        <!--end of container-->
+        {% include carousel.html height="50" unit="%" duration="3" number="1" %}
+        <div class="grid-container-3">
+            <div>
+                <h5 class="bold uppercase">Certified Developers</h5>
+                <p class="fade-1-4">
+                    We are a learning centered organization that works to improve developer skills. We place a high priority on certifications that show our team’s commitment to quality.
+                </p>
+            </div>
+            
+            <div >
+                <h5 class="bold uppercase">Fast Onboarding</h5>
+                <p class="fade-1-4">
+                    We can set up your project in less than a month. Our quick process lets your team start working right away.
+                </p>
+            </div>
+        </div>
+        </div>
     </section>
-    <div style="height:3px; width: 100%; background:#e13d3a;"></div>
-    <section class="bg-secondary">
+
+    <section class="process seperation-redline">
+        <h2 class="process__title">The Process</h2>
+      
+        <div class="process__timeline">
+          <article class="process__step">
+            <div class="process__dot"></div>
+            <h3 class="process__heading">Discovery</h3>
+            <p class="process__text">
+              We start by understanding how your team works and what tools you use. This helps us quickly join your team and begin working together.
+            </p>
+          </article>
+      
+          <article class="process__step">
+            <div class="process__dot"></div>
+            <h3 class="process__heading">Communication Guidelines</h3>
+            <p class="process__text">
+              We set up clear communication rules that match your team’s needs. This helps everyone stay informed and work together.
+            </p>
+          </article>
+      
+          <article class="process__step">
+            <div class="process__dot"></div>
+            <h3 class="process__heading">Kickoff Month</h3>
+            <p class="process__text">
+              During the first month, we closely track progress. This helps us spot any problems early and fix them right away.
+            </p>
+          </article>
+      
+          <article class="process__step">
+            <div class="process__dot"></div>
+            <h3 class="process__heading">Keep Improving</h3>
+            <p class="process__text">
+              We continually update our process by taking in 360 feedback. That lets us spot problems early and fix them fast.
+            </p>
+          </article>
+        </div>
+      
+        <a class="process__cta" href="#contacts">Get Started</a>
+    </section>
+
+    <section class="bg-secondary seperation-redline">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-12"></div>
-                    <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="12" data-height="375" data-nofollow="true" data-expandifr="true" data-scale="100" data-scale="100" data-reviews="354771,352226,345561,344840" data-clutchcompany-id="1108574"></div>
+              <div class="col-md-8 col-sm-12">
+                <div class="clutch-widget"
+                     data-url="https://widget.clutch.co"
+                     data-widget-type="12"
+                     data-height="375"
+                     data-nofollow="true"
+                     data-expandifr="true"
+                     data-scale="100"
+                     data-reviews="354771,352226,345561,344840"
+                     data-clutchcompany-id="1108574">
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
     </section>
-    <div style="height:3px; width: 100%; background:#e13d3a;"></div>
-    <section class="">
+
+    <section class="hyva-integration seperation-redline">
         <div class="container">
             <div class="row v-align-children">
-                <div class="col-md-8 col-sm-12" style="font-size: 16px; color:#162957; text-align: justify; padding-right: 40px;">
-                    <h3>Hyva Express! <br> Magento store in <b>2 weeks</b>.<br></h3>
+                <div class="col-md-8 col-sm-12">
+                    <h3>Hyva Express! <br> Magento store in <b> 2 weeks</b>.<br></h3>
                     <p>Get your Magento store up and running with the  lightning-fast Hyva theme in just two weeks. Our team uses the latest tools to build a fast and beautiful online store tailored to your needs. Start selling quickly with Hyva express.</p>
-                    <a class="btn btn-filled btn-lg mb0" href="#contacts">Get Started</a>
+                    <a class="process__cta" href="#contacts">Get Started</a>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <img src="assets/Img/hyva.webp" title="Hyva Logo" alt="Hyva Logo"></div>
+                    <img src="assets/Img/hyva.webp"  width="362" height="230"  title="Hyva Logo" alt="Hyva Logo"></div>
                 </div>
             </div>
-        </div>
     </section>
-    <div style="height:3px; width: 100%; background:#e13d3a;"></div>
-    <section class="bg-secondary">
-    <div class="container">
-        <div class="row">
-            <h3>Services</h3><br>
-            <div class="col-md-4 col-sm-6">
-                <div class="feature feature-3 mb-xs-24">
-                    <div class="left">
-                        <i class="ti ti-wand icon-sm"></i>
-                    </div>
-                    <div class="right">
-                        <h5 class="uppercase mb16">Certified Developer as a Service</h5>
-                        <p>You can boost your team with our Magento/Shopify developers. We support both new projects and existing stores with the option of a single developer or a full team.<br></p>
-                    </div>
-                </div>
 
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="feature feature-3 mb-xs-24">
-                    <div class="left">
-                        <i class="ti ti-search icon-sm"></i>
+    <section class="bg-secondary seperation-redline">
+        <h3 class="services">Services</h3>
+            <div class="unique-row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="feature feature-3 mb-xs-24">
+                        <div class="left">
+                            <i class="ti ti-wand icon-sm"></i>
+                        </div>
+                        <div class="right">
+                            <h5 class="header-services">Certified Developer as a Service</h5>
+                            <p>You can boost your team with our Magento/Shopify developers. We support both new projects and existing stores with the option of a single developer or a full team.</p>
+                        </div>
                     </div>
-                    <div class="right">
-                        <h5 class="uppercase mb16">Empowering Experts</h5>
-                        <p>Each of our developers is unique and always looking for new challenges. We use the latest research in psychology and coaching to support their growth.</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="feature feature-3 mb-xs-24">
+                        <div class="left">
+                            <i class="ti ti-search icon-sm"></i>
+                        </div>
+                        <div class="right">
+                            <h5 class="header-services">Empowering Experts</h5>
+                            <p>Each of our developers is unique and always looking for new challenges. We use the latest research in psychology and coaching to support their growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="feature feature-3 mb-xs-24">
+                        <div class="left">
+                            <i class="ti ti-reload icon-sm"></i>
+                        </div>
+                        <div class="right">
+                            <h5 class="header-services">Communication</h5>
+                            <p>All our developers receive training in communication. We know that clear communication is key to success for our team and our customers.&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="feature feature-3 mb-xs-24">
+                        <div class="left">
+                            <i class="ti ti-arrow-right icon-sm"></i>
+                        </div>
+                        <div class="right">
+                            <h5 class="header-services">Legal Safety</h5>
+                            <p>Hiring a freelancer for full-time work may not be legal in many areas. We take care of all the paperwork, from local NDA agreements to data protection rules.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="feature feature-3 mb-xs-24">
+                        <div class="left">
+                            <i class="ti ti-user icon-sm"></i>
+                        </div>
+                        <div class="right">
+                            <h5 class="header-services">Ethical Labor and Community</h5>
+                            <p>Our developers do more than just complete tasks. They actively share their ideas and are fairly paid for their work.</p>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="feature feature-3 mb-xs-24">
+                        <div class="left">
+                            <i class="ti ti-mobile icon-sm"></i>
+                        </div>
+                        <div class="right">
+                            <h5 class="header-services">Streamlined Development</h5>
+                            <p>We are using our own automation system using cloud virtualization and custom Docker setups streamline development environment, so developers can get up to speed quickly.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="feature feature-3 mb-xs-24">
-                    <div class="left">
-                        <i class="ti ti-reload icon-sm"></i>
-                    </div>
-                    <div class="right">
-                        <h5 class="uppercase mb16">Communication</h5>
-                        <p>All our developers receive training in communication. We know that clear communication is key to success for our team and our customers.<br>&nbsp;</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="feature feature-3 mb-xs-24">
-                    <div class="left">
-                        <i class="ti ti-arrow-right icon-sm"></i>
-                    </div>
-                    <div class="right">
-                        <h5 class="uppercase mb16">Legal Safety</h5>
-                        <p>Hiring a freelancer for full-time work may not be legal in many areas. We take care of all the paperwork, from local NDA agreements to data protection rules.<br></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="feature feature-3 mb-xs-24">
-                    <div class="left">
-                        <i class="ti ti-user icon-sm"></i>
-                    </div>
-                    <div class="right">
-                        <h5 class="uppercase mb16">Ethical Labor and Community</h5>
-                        <p>Our developers do more than just complete tasks. They actively share their ideas and are fairly paid for their work.<br><br></p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="feature feature-3 mb-xs-24">
-                    <div class="left">
-                        <i class="ti ti-mobile icon-sm"></i>
-                    </div>
-                    <div class="right">
-                        <h5 class="uppercase mb16">Streamlined Development</h5>
-                        <p>We are using our own automation system using cloud virtualization and custom Docker setups streamline development environment, so developers can get up to speed quickly.<br></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-    <div style="height:3px; width: 100%; background:#e13d3a;"></div>
-    <section class="flag-section" style="background: #fff;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <div class="header-flags"><img src="assets/Img/flags.webp" alt="eu-ge flag" title="Developers Alliance. Made in Georgia.">
-                        <div class="header-flags-caption">Made in Georgia</div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
-    <section class="">
-        <div class="container">
-            <div class="row v-align-children">
-                <div class="col-md-9 col-sm-12" style="font-size: 16px; color:#162957; text-align: justify; padding-right: 40px;">
-                    <h3>Trusted Technology Partner<br></h3>
-                    <p>We provide certified Magento and Shopify developer services for Agencies and Merchants.</p>
-                    <p>Finding a developer for e-commerce is becoming increasingly difficult. As platforms evolve in complexity, the required training intensifies.</p>
-                    <p>Moreover, technical skills alone are no longer sufficient. It's essential to maintain a good work-life balance, avoid burnout, uphold strong communication, and continuously learn new skills.</p>
-                    <p><b>We maintain developer happiness, quality, and growth, allowing you to focus on your business.</b></p>
-                </div>
-                <div class="col-md-9 col-sm-12">
-                    <img 
-                    alt="Developers Alliance"
-                    src="assets/Img/devall-raft-sc.webp"
-                    srcset="
-                        assets/Img/devall-raft-sc-480w.webp 480w,
-                        assets/Img/devall-raft-sc-480w.webp 916w,
-                        assets/Img/devall-raft-sc.webp 1030w
-                    "
-                    sizes="
-                    (max-width: 1536px) 1030px,
-                    (max-width: 1280px) 916px,
-                    (max-width: 768px) 480px"
-                  >
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<div style="height:3px; width: 100%; background:#e13d3a;"></div>
-<section>
-    <style>
-        .dev-carousel li img { max-width:128px; }
-    </style>
-    <div class="container team">
-        <div class="row mb64 mb-xs-24">
-            <div class="dev-carousel">
-                <ul class="slides">
-                    <li>
-                        <picture>
-                            <source srcset="assets/Img/dev1.webp" type="image/webp">
-                            <source srcset="assets/Img/dev1.webp" type="image/jpeg">
-                            <img src="assets/Img/dev1.webp" alt="Developers Alliance Dedicated Developer">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <source srcset="assets/Img/dev3.webp" type="image/webp">
-                            <source srcset="assets/Img/dev3.webp" type="image/jpeg">
-                            <img src="assets/Img/dev3.webp" alt="Developers Alliance Dedicated Developer">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <source srcset="assets/Img/dev2.webp" type="image/webp">
-                            <source srcset="assets/Img/dev2.jpg" type="image/jpeg">
-                            <img src="assets/Img/dev2.jpg" alt="Developers Alliance Dedicated Developer">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <source srcset="assets/Img/dev4.webp" type="image/webp">
-                            <source srcset="assets/Img/dev4.jpg" type="image/jpeg">
-                            <img src="assets/Img/dev4.jpg" alt="Developers Alliance Dedicated Developer">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <source srcset="assets/Img/dev5.webp" type="image/webp">
-                            <source srcset="assets/Img/dev5.webp" type="image/jpeg">
-                            <img src="assets/Img/dev5.jpg" alt="Developers Alliance Dedicated Developer">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <source srcset="assets/Img/dev1.webp" type="image/webp">
-                            <source srcset="assets/Img/dev1.webp" type="image/jpeg">
-                            <img src="assets/Img/dev1.webp" alt="Developers Alliance Dedicated Developer">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <source srcset="assets/Img/dev3.webp" type="image/webp">
-                            <source srcset="assets/Img/dev3.webp" type="image/jpeg">
-                            <img src="assets/Img/dev3.webp" alt="Developers Alliance Dedicated Developer">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <source srcset="assets/Img/dev2.webp" type="image/webp">
-                            <source srcset="assets/Img/dev2.webp" type="image/jpeg">
-                            <img src="assets/Img/dev2.webp" alt="Developers Alliance Dedicated Developer">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <source srcset="assets/Img/dev4.webp" type="image/webp">
-                            <source srcset="assets/Img/dev4.webp" type="image/jpeg">
-                            <img src="assets/Img/dev4.webp" alt="Developers Alliance Dedicated Developer">
-                        </picture>
-                    </li>
-                    <li>
-                        <picture>
-                            <source srcset="assets/Img/dev5.webp" type="image/webp">
-                            <source srcset="assets/Img/dev5.webp" type="image/jpeg">
-                            <img src="assets/Img/dev5.webp" alt="Developers Alliance Dedicated Developer">
-                        </picture>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-                <h2>Our Dedicated Developer Team<br></h2>
+    <section class="seperation-redline">
+        <div class="container-team">
+          <div class="text-center mb-4">
+            <img src="assets/Img/flags.webp" alt="EU and Georgia flag" title="Developers Alliance. Made in Georgia." class="img-fluid">
+            <div class="header-flags-caption mt-2 text-uppercase text-muted small">Made in Georgia</div>
+          </div>
+      
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h3 class="mb-3">Trusted Technology Partner</h3>
+              <p>We provide certified Magento and Shopify developer services for agencies and merchants.</p>
+              <p>Finding skilled e-commerce developers is increasingly difficult. As platforms evolve, so do the training requirements.</p>
+              <p>Beyond technical skills, developers need work-life balance, strong communication, and continuous learning.</p>
+              <p><strong>We ensure developer happiness, quality, and growth — so you can focus on your business.</strong></p>
+            </div>
+      
+            <div class="col-md-6">
+              <picture>
+                <source media="(max-width: 770px)" srcset="assets/Img/devall-raft-sc-480w.webp">
+                <source media="(min-width: 800px)" srcset="assets/Img/devall-raft-sc.webp">
+                <img src="assets/Img/devall-raft-sc.webp" alt="Team of developers" class="img-fluid" width="500">
+              </picture>
+            </div>
+          </div>
+        </div>
+    </section>   
+
+    <section class="dedicated-team seperation-redline">
+        <div class="dedicated-content">
+                {% include slider.html 
+                    number=1
+                    duration=5 
+                    width=100 
+                    height=100 
+                    gap=30       
+                %}
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                <h2>Our Dedicated Developer Team</h2>
                 <p class="mb40 mb-xs-24"> 
-                    We have a team of over 20 developers, each certified in Magento. If you're launching a project or need assistance with your store, we're ready to help.</p>
-                <a class="mb0 btn btn-lg btn-filled" href="#contacts">Become a Partner</a>
+                    We have a team of over 20 developers, each certified in Magento. 
+                    If you're launching a project or need assistance with your store, we're ready to help.</p>
+                <a href="#contacts" class="process__cta margin-top">Become a Partner</a>
             </div>
         </div>
-    </div>
-</section>
-<div style="height:2px; width: 100%; background:#e13d3a;"></div>
-<section>
-    <div class="container">
-        <h4 class="uppercase">Our Partners<br></h4>
-        <br>
-        <div class="row">
-            <div class="logo-carousel">
-                <ul class="slides">
-                    <li>
-                        <a href="https://sylius.com" target="_blank">
-                            <img alt="Logo" src="assets/Img/logo-sylius.webp">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://mage-os.org/" target="_blank">
-                            <img alt="Logo" src="assets/Img/logo-mage-os-logo.webp">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://m.academy/" target="_blank">
-                            <img alt="Logo" src="assets/Img/logo-macademy.webp">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://mage-os.org/" target="_blank">
-                            <img alt="Logo" src="assets/Img/logo-magentoassociation.webp">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://hyva.io" target="_blank">
-                            <img alt="Logo" src="assets/Img/logo-hyva.webp">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <img alt="Logo" src="assets/Img/logo-bdo.webp">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://business.adobe.com/products/magento/magento-commerce.html" target="_blank">
-                            <img alt="Logo" src="assets/Img/logo-magento.webp">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img alt="Logo" src="assets/Img/logo-bedford.webp">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div><br><br>
-    <div class="container">
-        <h4 class="uppercase">Member of<br></h4>
-            <img src="assets/Img/Eba-Logo.webp" style="width:200px;">
-            <img src="assets/Img/logo-magentoassociation.webp" style="width:300px; margin-left:40px; padding-bottom:45px;">
-        <br>
-    </div>
-</section>
-<div style="height:2px; width: 100%; background:#e13d3a;"></div>
+    </section>
 
-<section class="">
-    <a name="magento-extensions"></a>
-    <div class="container">
-        <div class="row v-align-children">
-            <div class="col-md-8 col-sm-12" style="font-size: 16px; color:#162957; text-align: justify; padding-right: 40px;">
-                <h3>Magento Extensions<br></h3>
-                <p>Take a look at some of our Magento extensions. Reach out to us and we will customize it to be compatible with any Magento theme.
-                    <br><span style="color:#666; font-size:smaller">Reccomended by Mark Shust (m.academy) and other community leaders.</span></p>
+    <section class="seperation-redline">
+        <div class="partner-content">
+            <div class="container">
+                <h4 class="uppercase">Our Partners</h4>
+                    <div class="logo-carousel">
+                        {% include slider.html 
+                            number=2
+                            duration=20
+                            width=120 
+                            height=60
+                            gap=30       
+                        %}
+                    </div>
             </div>
-            <div class="col-md-4 col-sm-12">
-                <img src="assets/Img/cert1.webp" title="Certified Magento Expert Developers" style="height: 60px; padding-right:5px;"><img src="assets/Img/cert2.webp" title="Certified Magento Professional Developers" style="height: 60px; padding-right:5px;"><img src="assets/Img/cert3.webp" title="Certified Magento Master Developers" style="height: 60px; padding-right:5px;"></div>
-        </div>
-        <p></p><br>
-        <div class="row v-align-children">
-            <div class="col-md-4 col-sm-12">
-                <a href="https://github.com/developersalliance/module-table-rates" target="_blank" title="Advanced Magento Table Rates extension."><img src="assets/Img/extension-tablerates.webp" style="border: 1px solid #ccc;"></a>
-            </div>
-            <div class="col-md-8 col-sm-12" style="font-size: 16px; color:#162957; text-align: justify; padding-right: 40px;">
-                <h4><a href="https://github.com/developersalliance/module-table-rates" target="_blank" title="Advanced Magento Table Rates extension.">Advanced Magento Table Rates extension.</a></h4>
-                <span style="color:#666; font-size:smaller">Need a Customization? <a href="#contacts">Contact Us!</a></span>
-                <br>
-                <p>The Developers Alliance Table Rates Magento 2 module enhances the default Magento functionality for managing shipping table rates by providing a user-friendly interface for viewing and managing table rates.</p>
+            <div class="container">
+                <h4 class="uppercase">Member of</h4>
+                <img src="assets/Img/Eba-Logo.webp" width="200" height="130" alt="EBA Logo">
+                <img class="magento-logo" src="assets/Img/logo-magentoassociation.webp" width="400" height="130" alt="Magento Association Logo">
             </div>
         </div>
-        <p></p>
-        <div class="row v-align-children">
-            <div class="col-md-4 col-sm-12">
-                <a href="https://github.com/developersalliance/module-wholesale" target="_blank" title="Magento Wholesale extension."><img src="assets/Img/extension-wholesale.webp" style="border: 1px solid #ccc;"></a>
+    </section>
+
+    <section class="seperation-redline">
+        <a name="magento-extensions"></a>
+        <div class="magento-extensions">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-8">
+                    <h3 class="mb-3">Magento Extensions</h3>
+                    <p class="intro">
+                    Take a look at some of our Magento extensions. Reach out to us and we will customize them to be compatible with any Magento theme.
+                    </p>
+                    <p class="text-muted small mb-0">
+                    Recommended by Mark Shust (m.academy) and other community leaders.
+                    </p>
+                </div>
+                <div class="center col-sm-12 text-center">
+                    <img src="assets/Img/cert1.webp" alt="Certified Magento Expert Developers" title="Certified Magento Expert Developers" class="cert-img" height="100" width="100">
+                    <img src="assets/Img/cert2.webp" alt="Certified Magento Professional Developers" title="Certified Magento Professional Developers" class="cert-img" height="100" width="100">
+                    <img src="assets/Img/cert3.webp" alt="Certified Magento Master Developers" title="Certified Magento Master Developers" class="cert-img" height="100" width="100">
+                </div>
             </div>
-            <div class="col-md-8 col-sm-12" style="font-size: 16px; color:#162957; text-align: justify; padding-right: 40px;">
-                <h4><a href="https://github.com/developersalliance/module-wholesale" target="_blank" title="Magento Wholesale extension.">Magento Wholesale extension.</a></h4>
-                <span style="color:#666; font-size:smaller">Need a Customization? <a href="#contacts">Contact Us!</a></span>
-                <br>
-                <p>The Developers Alliance Magento Wholesale extension is a valuable tool, showcasing configurable products all the simple products in a table grid view. This approach significantly enhances the clarity and detail of product displays, while also allowing users to easily adjust the desired quantity of the product.</p>
+        
+            <div class="row align-items-center mb-5">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <a href="https://github.com/developersalliance/module-table-rates" target="_blank" title="Advanced Magento Table Rates extension.">
+                        <img class="img-border" src="assets/Img/extension-tablerates.webp" alt="extension-tablerates" width="360" height="270" >
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="mb-2">
+                    <a class="button-red"  href="https://github.com/developersalliance/module-table-rates" target="_blank">
+                        Advanced Magento Table Rates extension
+                    </a>
+                    </h4>
+                    <p class="text-muted small mb-2">
+                    Need a customization? <a class="button-red" href="#contacts">Contact Us!</a>
+                    </p>
+                    <p>
+                    The Developers Alliance Table Rates Magento 2 module enhances the default Magento functionality 
+                    for managing shipping table rates by providing a user‑friendly interface for viewing and managing table rates.
+                    </p>
+                </div>
             </div>
-        </div>
-        <p></p>
-        <div class="row v-align-children">
-            <div class="col-md-4 col-sm-12">
-                <a href="https://github.com/developersalliance/module-abandoned" target="_blank" title="Magento Abandoned Cart extension."><img src="assets/Img/abandoned-module.webp" style="border: 1px solid #ccc;"></a>
+        
+            <div class="row align-items-center mb-5">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <a href="https://github.com/developersalliance/module-wholesale" target="_blank" title="Magento Wholesale extension.">
+                    <img class="img-border"  src="assets/Img/extension-wholesale.webp" alt="extension-wholesale" width="360" height="270" >
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="mb-2">
+                    <a class="button-red"  href="https://github.com/developersalliance/module-wholesale" target="_blank">
+                        Magento Wholesale extension
+                    </a>
+                    </h4>
+                    <p class="text-muted small mb-2">
+                    Need a customization? <a class="button-red" href="#contacts">Contact Us!</a>
+                    </p>
+                    <p>
+                    The Developers Alliance Magento Wholesale extension showcases configurable products in a clear, table‑grid view and lets users easily adjust quantities right in the list.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-8 col-sm-12" style="font-size: 16px; color:#162957; text-align: justify; padding-right: 40px;">
-                <h4><a href="https://github.com/developersalliance/module-abandoned" target="_blank" title="Magento Abandoned Cart extension.">Magento Abandoned Cart extension.</a></h4>
-                <span style="color:#666; font-size:smaller">Need a Customization? <a href="#contacts">Contact Us!</a></span>
-                <br>
-                <p>The Developers Alliance Abandoned Cart. This extension is designed to handle abandoned shopping carts. It monitors the state of a user's shopping cart and sends an email reminder to the customer if the cart is active but hasn't been updated for a certain period of time.</p>
+        
+            <div class="row align-items-center mb-5">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <a href="https://github.com/developersalliance/module-abandoned" target="_blank" title="Magento Abandoned Cart extension.">
+                    <img class="img-border" src="assets/Img/abandoned-module.webp" alt="abandoned-module" width="360" height="270" > 
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="mb-2">
+                    <a class="button-red" href="https://github.com/developersalliance/module-abandoned" target="_blank">
+                        Magento Abandoned Cart extension
+                    </a>
+                    </h4>
+                    <p class="text-muted small mb-2">
+                    Need a customization? <a class="button-red" href="#contacts">Contact Us!</a>
+                    </p>
+                    <p>
+                    This extension tracks active but untouched shopping carts and automatically sends reminder emails to help recover lost sales.
+                    </p>
+                </div>
             </div>
-        </div>
-        <p></p>
-        <div class="row v-align-children">
-            <div class="col-md-4 col-sm-12">
-                <a href="https://github.com/developersalliance/module-wholesale" target="_blank" title="Magento PAYZE extension."><img src="assets/Img/payze-module.webp" style="border: 1px solid #ccc;"></a>
+        
+            <div class="row align-items-center mb-5">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <a href="https://github.com/developersalliance/module-payze" target="_blank" title="Magento Payze extension.">
+                    <img class="img-border" src="assets/Img/payze-module.webp" alt="payze-module" width="360" height="270" >
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="mb-2">
+                    <a  class="button-red" href="https://github.com/developersalliance/module-payze" target="_blank">
+                        Magento Payze Payment Gateway extension
+                    </a>
+                    </h4>
+                    <p class="text-muted small mb-2">
+                    Need a customization? <a class="button-red" href="#contacts">Contact Us!</a>
+                    </p>
+                    <p>
+                    PAYZE is an effortless online payments solution. Our extension lets you integrate PAYZE quickly and manage payment flows seamlessly.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-8 col-sm-12" style="font-size: 16px; color:#162957; text-align: justify; padding-right: 40px;">
-                <h4><a href="https://github.com/developersalliance/module-payze" target="_blank" title="Magento PAYZE extension.">Magento Payze Payment gateway extension.</a></h4>
-                <span style="color:#666; font-size:smaller">Need a Customization? <a href="#contacts">Contact Us!</a></span>
-                <br>
-                <p>The Developers Alliance extension for PAYZE Payment Gateway. PAYZE is a way to clear and effortless online payments. We provide various technical solutions that allow you to manage your payment processes in the blink of an eye.</p>
+        
+            <div class="row align-items-center center-column">
+                <p class="cta-text mb-3">
+                <strong>Do you need a customization or a new feature for your project?</strong>
+                </p>
+                <a href="#contacts" class="process__cta margin-top">Contact Us!</a>
             </div>
-        </div>
-        <div class="row v-align-children pt64">
-            <div class="col-md-12 col-sm-12" style="font-size: 16px; color:#162957; text-align: center; padding-right: 40px;">
-                <span style="font-weight: bold;">Do you need a customization or a new functionality for your project?<br><br>
-                    <a class="mb0 btn btn-lg btn-filled" href="#contacts">Contact Us!</a></span>
-            </div>
-        </div>
-    </div>
-</section>
-    <div style="height:2px; width: 100%; background:#e13d3a;"></div>
-    <section class="">
+        </div>  
+    </section>
+
+    <section class="seperation-redline">
         <a name="magento-setup"></a>
         <div class="container">
             <div class="row v-align-children">
-                <div class="col-md-12 col-sm-12" style="font-size: 16px; color:#162957; text-align: justify; padding-right: 40px;">
+                <div class="col-md-12 col-sm-12">
                     <h3>Magento Local Setup with Docker<br></h3>
-                    <p>Check out our Magento local setup approach using DockerGento. Magento local setup made easy! You can use it also for a development on a remote server and run 10+ Magento projects even on a Macbook Air.
-                        <br><br><span style="color:#666; font-size:smaller"><a href="https://github.com/developersalliance/magento2-dockergento">https://github.com/developersalliance/magento2-dockergento</a></span></p>
+                    <p>Check out our Magento local setup approach using DockerGento. Magento local setup made easy! 
+                        You can use it also for a development on a remote server and run 10+ Magento projects even on a Macbook Air.
+                    </p>
+                    <span><a class="button-red" href="https://github.com/developersalliance/magento2-dockergento">https://github.com/developersalliance/magento2-dockergento</a></span>
                 </div>
             </div>
         </div>
     </section>
-    <div style="height:2px; width: 100%; background:#e13d3a;"></div>
-    <a name="contacts"></a>
-    <section >
-    <div class="container">
-        <div class="row">
+
+    <section class="seperation-redline">
+        <a name="contacts"></a>
+        <div class="email-content">
             <div class="col-sm-6 col-md-5">
                 <h4 class="uppercase">We'd love to hear from you<br></h4>
                 <p>Whether you have a question about services, pricing, demo, or anything else, our team is ready to answer all your questions.<br></p>
@@ -529,94 +477,21 @@ title: Developers Alliance - Magento Developers and Support
                 <p> G. Kuchishvili 10,<br>Tbilisi, Georgia<br>0179</p>
                 <hr>
                 <p> 
-                    <a href="mailto:hello@developers-alliance.com">Email Me</a>    
+                    <a class="button-red"  href="mailto:hello@developers-alliance.com">Email Me</a>    
                 </p>
             </div>
             <div class="col-sm-6 col-md-5 col-md-offset-1">
-                <form action="https://api.web3forms.com/submit" method="POST" class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
-                    <input type="text" class="validate-required" name="name" placeholder="Your Name">
-                    <input type="hidden" name="access_key" value="8ae27624-4a9d-4f31-9ccc-b939534003e0">
-                    <input type="text" class="validate-required validate-email" name="email" placeholder="Email Address">
-                    <textarea class="validate-required" name="message" rows="4" placeholder="Message"></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+                {% include form.html form="1" access_key="8ae27624-4a9d-4f31-9ccc-b939534003e0" %}
+            </div>  
         </div>
-    </div>
-</section>
-<div style="height:2px; width: 100%; background:#e13d3a;"></div>
-<section class="bg-secondary hidden-xs">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 text-center">
-                <h3 class="mb64 uppercase">People &nbsp;
-                    <i class="ti-heart"></i>&nbsp; DevAll</h3>
-                <div class="testimonials text-slider slider-arrow-controls">
-                    <ul class="slides">
-                        <li>
-                            <p class="lead">Developers Alliance is a great partner.</p>
-                            <div class="quote-author">
-                                <h6 class="uppercase">Gian Genovesi<br></h6>
-                                <span>Briteskies.com</span>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="lead">I hired a couple developers to help me out on a project. They were very professional.</p>
-                            <div class="quote-author">
-                                <h6 class="uppercase">Laura Folco<br></h6>
-                                <span>lfolco.com </span>
-                            </div>
-                        </li><li>
-                        <p class="lead"><br>Developers Alliance helped us with migration. Their approach was very efficient and thorough.<br></p>
-                        <div class="quote-author">
-                            <h6 class="uppercase">Michael Hubner<br></h6>
-                            <span>Common GmbH</span>
-                        </div>
-                    </li><li>
-                        <p class="lead"><br>My first experience with remote developers. <br></p>
-                        <div class="quote-author">
-                            <h6 class="uppercase">Chuck Jacobs<br></h6>
-                            <span>Jacobs Web Design&nbsp;</span>
-                        </div>
-                    </li><li>
-                        <p class="lead">Oskars team were very responsive and produced quality work. They met a very tight deadline with our ReactJs App project. <br></p>
-                        <div class="quote-author">
-                            <h6 class="uppercase">Alexander Pedersen</h6>
-                            <span>Blimp DK</span>
-                        </div>
-                    </li>
-                        <li>
-                            <p class="lead"><br>Thanks for the amazing support, really. It was invaluable for solving our problems.<br></p>
-                            <div class="quote-author">
-                                <h6 class="uppercase">Shani Dadon<br></h6>
-                                <span>Adikastyle.com</span>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="lead">Well this stuff works. My tasks are sometimes quite messed up and things change alot, it can be quite irritating but DevAll guys can handle it well. I have worked with them already four years, and with their good, consistent work, I am for sure continuing our work together.</p>
-                            <div class="quote-author">
-                                <h6 class="uppercase">Danel Lerch<br></h6>
-                                <span>erply.com</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    </section>
+
+    <section class="seperation-redline bg-secondary">
+        <div class="dedicated-content">
+            <h3 class="mb17">People &nbsp;
+                <i class="ti-heart"></i>&nbsp; DevAll
+            </h3>
+            {% include carousel-text.html height="30" unit="%" duration="7" number="4" %}
         </div>
-
-    </div>
-
-</section>
-<section class="image-bg parallax overlay pt160 pb160">
-    <div class="background-image-holder">
-        <img alt="image" class="background-image" src="assets/Img/ushba.webp">
-    </div>
-
-</section>
-</div>
-
-<!-- Cookie Consent Script -->
-<div id="consent-banner">
-    This site uses cookies to deliver services and to show you relevant ads. By using our site, you consent to the use of cookies.
-    <button id="accept-cookies">I Accept</button>
-</div>
+    </section>
+</main>

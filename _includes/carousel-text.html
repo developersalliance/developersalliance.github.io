@@ -1,0 +1,151 @@
+{% assign letterstring = "a,b,c,d,e,f,g,h,i,j,k,l,m,n" %}
+{% assign letters       = letterstring | split: "," %}
+{% assign number        = include.number | minus: 1 %}
+
+<div class="slider-container">
+  <div id="carousel{{ number }}" class="slider">
+
+    {%- comment -%} radio inputs {%- endcomment -%}
+    {% for item in page.carousels[number].texts %}
+      <input
+        class="slider-toggle"
+        type="radio"
+        name="carousel{{ number }}"
+        id="{{ number }}{{ letters[forloop.index0] }}"
+        {% if forloop.first %}checked{% endif %}
+      />
+    {% endfor %}
+
+    {%- comment -%} prev/next controls {%- endcomment -%}
+    {% for item in page.carousels[number].texts %}
+      {% if forloop.index == forloop.length %}
+        {% assign nextindex = 0 %}
+      {% else %}
+        {% assign nextindex = forloop.index0 | plus: 1 %}
+      {% endif %}
+      {% if forloop.index0 == 0 %}
+        {% assign previndex = forloop.length | minus: 1 %}
+      {% else %}
+        {% assign previndex = forloop.index0 | minus: 1 %}
+      {% endif %}
+      {% assign nextletter = letters[nextindex] %}
+      {% assign prevletter = letters[previndex] %}
+
+      <div class="slider-controls">
+        <label class="slider-arrow slider-arrow--prev" for="{{ number }}{{ prevletter }}"></label>
+        <label class="slider-arrow slider-arrow--next" for="{{ number }}{{ nextletter }}"></label>
+      </div>
+    {% endfor %}
+
+    <div class="slider-track">
+      <ul>
+        {% for item in page.carousels[number].texts %}
+          <li class="slider-slide">
+            <div class="slide-content">
+              {% if item.heading %}<h6>{{ item.heading }}</h6>{% endif %}
+              <p>{{ item.text }}</p>
+              {% if item.subheading %}<span>{{ item.subheading }}</span>{% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<style>
+.slider-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: {{ include.height }}{{ include.unit }};
+  margin: 1rem 0;
+}
+.slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+}
+.slider-toggle,
+.slider-controls {
+  display: none;
+}
+{% for item in page.carousels[number].texts %}
+.slider-toggle:nth-of-type({{ forloop.index }}):checked ~ .slider-track {
+  transform: translateX(-{{ forloop.index0 }}00%);
+}
+.slider-toggle:nth-of-type({{ forloop.index }}):checked ~ .slider-controls:nth-of-type({{ forloop.index }}) {
+  display: block; 
+  opacity: 1;
+  list-style-type: none;
+}
+{% endfor %}
+
+.slider-track li {
+  list-style-type: none;
+}
+
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  width: 30px; height: 30px;
+  margin-top: -15px;
+  cursor: pointer;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  z-index: 3;
+}
+.slider-arrow--prev { left: 20px; transform: rotate(-135deg); }
+.slider-arrow--next { right: 20px; transform: rotate(45deg); }
+
+.slider-track {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  margin: 0; 
+  padding: 0;
+  transition: transform 0.5s ease;
+}
+.slider-slide {
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  top: 0; 
+  left: 0;
+  height: 100%;
+}
+{% for item in page.carousels[number].texts %}
+.slider-track .slider-slide:nth-of-type({{ forloop.index }}) {
+  opacity: 1;
+  transform: translateX({{ forloop.index0 }}00%);
+}
+{% endfor %}
+
+.slider-toggle:nth-of-type({{ forloop.index }}):checked ~ .slider-track .slider-slide:nth-of-type({{ forloop.index }}) {
+  opacity: 1; transform: scale(1);
+}
+.slide-content { 
+    max-width: 600px;
+    justify-self: center;
+}
+.slide-content h6 { margin: 0; font-size: 1.25rem; }
+</style>
+
+<script>
+{% if include.duration %}
+  setInterval(function() {
+    var nextBtns = document.querySelectorAll('#carousel{{ number }} .slider-arrow--next'),
+        current = 0;
+    nextBtns.forEach(function(btn, i){
+      if (getComputedStyle(btn).display !== 'none') current = i;
+    });
+    nextBtns[current].click();
+  }, {{ include.duration }} * 1000);
+{% endif %}
+</script>

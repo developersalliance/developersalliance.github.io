@@ -1,0 +1,59 @@
+{% assign number      = include.number %}
+{% assign images      = page.carousels[number].images %}
+{% assign count       = images | size %}
+
+{% assign move_time   = include.move_time  | default: 0.4 %}  
+{% assign pause_time  = include.pause_time | default: 1   %}  
+
+{% assign cycle_time  = move_time  | plus: pause_time %}       
+{% assign total_time  = cycle_time | times: count      %}      
+
+{% assign w           = include.width  | default: 128 %}
+{% assign h           = include.height | default: 128 %}
+{% assign gap         = include.gap    | default: 70  %}
+{% assign step_px     = w | plus: gap  %}
+{% assign distance_px = step_px | times: count %}
+
+<style>
+.autoscroll-{{ number }} {
+  overflow: hidden;
+}
+
+.autoscroll-track-{{ number }} {
+  display: flex;
+  gap: {{ gap }}px;
+  animation: scroll-{{ number }} {{ total_time }}s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scroll-{{ number }} {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-{{ distance_px }}px, 0, 0); }
+}
+
+.autoscroll-{{ number }}:hover .autoscroll-track-{{ number }} {
+  animation-play-state: paused;
+}
+.autoscroll-{{ number }}:not(:hover) .autoscroll-track-{{ number }} {
+  animation-play-state: running;
+}
+
+.autoscroll-{{ number }} img {
+  height: {{ h }}px;
+  object-fit: cover;
+}
+</style>
+
+<div class="autoscroll-{{ number }}">
+  <div class="autoscroll-track-{{ number }}">
+    {% for _ in (1..3) %}
+      {% for img in images %}
+        <div class="slide">
+          <img src="{{ img.image }}"
+               alt="{{ img.alt | default:'' }}"
+               loading="lazy">
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
