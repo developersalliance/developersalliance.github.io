@@ -11,31 +11,22 @@
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <link rel="icon" href="assets/Img/logo-light.webp">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
     <link href="assets/css/themify-icons.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/flexslider.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/theme-fire.css" rel="stylesheet" type="text/css"  />
-    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:100,300,400,600,700" rel="stylesheet" type="text/css">
-    <link href="assets/css/font-titillium.css" rel="stylesheet" type="text/css">
-    <style>#shadow-host-companion { display: none; } </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@400;500;600&family=Raleway:wght@100;300;400;500;600;700&family=Titillium+Web:wght@100;300;400;600;700&display=swap">
     <title>{{ page.title }}</title>
   </head>
   <body class="scroll-assist btn-rounded">
-    {% include navigator.html %}
+    {% include navigation.html %}
     {{ content }}
     {% include footer.html %}
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/flexslider.min.js"></script>
-    <script src="assets/js/smooth-scroll.min.js"></script>
-    <script src="assets/js/parallax.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
     {% if page.url != "/" %}
     <script src="assets/js/masonry.min.js"></script>
     <script src="assets/js/twitterfetcher.min.js"></script>
+    {% else %}
+    <script async defer src="https://widget.clutch.co/static/js/widget.js"></script>
     {% endif %}
   </body>
 </html>
