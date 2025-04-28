@@ -689,4 +689,8 @@ section.seperation-redline.bg-secondary
   label.carousel__control {
     top: 44%;
   }
+  
+  .dedicated-content {
+    place-items: unset;
+  }
 }
