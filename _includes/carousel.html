@@ -30,15 +30,15 @@
             <li class="carousel__slide">
               {% if forloop.first %}
                 <img 
-                  src="{{ item.image }}" 
-                  alt="Carousel Image {{ forloop.index }}"
+                  src="{{ item.image }}"
+                  alt="{{ item.alt }}"
                   fetchpriority="high"
                   decoding="async"
                 >
               {% else %}
                 <img 
                   src="{{ item.image }}" 
-                  alt="Carousel Image {{ forloop.index }}"
+                  alt="{{ item.alt }}"
                   loading="lazy"
                   decoding="async"
                 >

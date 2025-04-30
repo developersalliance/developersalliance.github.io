@@ -1,3 +1,7 @@
+---
+---
+
+
 @font-face {
   font-family: "Oswald-Heavy";
   src: url("/assets/fonts/Oswald-Heavy.ttf");
@@ -109,6 +113,10 @@ body {
   line-height: 64px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   color: #313030;
+}
+
+.mb15 {
+  font-family: 'Oswald-Light';
 }
 
 .redline {
