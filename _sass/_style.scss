@@ -71,6 +71,12 @@ ul.menu li a {
   box-sizing: border-box;
   white-space: nowrap;
   display: inline-block;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+ul.menu li a:hover {
+  opacity: 1;
 }
 
 img.logo.logo-dark {
@@ -89,10 +95,6 @@ body {
   margin: 0;
   line-height: 24px;
   color: #666;
-}
-
-.active {
-  display: block;
 }
 
 .module.widget-handle.mobile-toggle.right.visible-sm.visible-xs {
