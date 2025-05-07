@@ -14,7 +14,7 @@
 
 h1 { font-family: "Oswald-Heavy"; }
 
-h2,h3,h4,h5,h6 { 
+h2,h3,h4,h5,h6, span{ 
   font-family: "Oswald-Light"; 
   font-size: 32px;
   line-height: 40px;
@@ -94,7 +94,7 @@ body {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   line-height: 24px;
-  color: #666;
+  color: #313030;
 }
 
 .module.widget-handle.mobile-toggle.right.visible-sm.visible-xs {
@@ -124,7 +124,7 @@ body {
   line-height: 64px;
   font-weight: 400;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-  color: #e13d3a;
+  color: #E13D3A;
 }
 
 .container-header {
@@ -136,7 +136,6 @@ body {
 }
 
 .header {
-  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -422,7 +421,7 @@ p {
 
 .button-red {
   text-decoration: none;
-  color: #a32020;
+  color: #E13D3A;
 }
 
 .img-border {
@@ -696,5 +695,10 @@ section.seperation-redline.bg-secondary
   
   .dedicated-content {
     place-items: unset;
+  }
+
+  .header.center
+  .center {
+    align-items: baseline;
   }
 }
