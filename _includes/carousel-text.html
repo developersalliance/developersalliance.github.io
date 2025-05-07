@@ -42,7 +42,7 @@
         {% for item in page.carousels[number].texts %}
           <li class="slider-slide">
             <div class="slide-content">
-              {% if item.heading %}<h6>{{ item.heading }}</h6>{% endif %}
+              {% if item.heading %}<span>{{ item.heading }}</span>{% endif %}
               <p>{{ item.text }}</p>
               {% if item.subheading %}<span>{{ item.subheading }}</span>{% endif %}
             </div>
@@ -134,7 +134,7 @@
     max-width: 600px;
     justify-self: center;
 }
-.slide-content h6 { margin: 0; font-size: 1.25rem; }
+.slide-content span { margin: 0; font-size: 1.25rem; }
 </style>
 
 <script>
