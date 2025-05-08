@@ -3,7 +3,9 @@
   src: 
     url("/assets/fonts/Oswald-Heavy.woff2") format("woff2"), 
     url("/assets/fonts/Oswald-Heavy.woff")  format("woff");  
-  font-display: swap
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
@@ -11,7 +13,9 @@
   src:
     url("/assets/fonts/Oswald-Light.woff2") format("woff2"), 
     url("/assets/fonts/Oswald-Light.woff")  format("woff");  
-  font-display: swap
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .seperation-redline {
