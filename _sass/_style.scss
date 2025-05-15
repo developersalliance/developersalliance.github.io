@@ -1,26 +1,28 @@
 @font-face {
   font-family: "Oswald-Heavy";
   src: url("/assets/fonts/Oswald-Heavy.woff2")  format("woff2");  
+  font-weight: 700;
   font-display: swap;
-  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oswald-Light";
   src: url("/assets/fonts/Oswald-Light.woff2") format("woff2");
-  font-display: swap;
   font-weight: 300;
+  font-display: swap;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Raleway";
   src: url("/assets/fonts/Raleway.woff2") format("woff2");
-  font-display: swap;
   font-weight: 300;   
+  font-display: swap;
   font-style: normal;
 }
+
+html{overflow-y:scroll}
 
 .seperation-redline {
   border-bottom: 3px solid #e13d3a;
@@ -84,21 +86,16 @@ ul.menu li a {
   transition: opacity 0.3s ease;
 }
 
-img.logo.logo-dark {
-  max-height: 33px;
-  width: auto;
-}
-
 a.logo-class {
   display: flex;
   align-items: center;
 }
 
 body {
-  font-weight: 400;
-  font-family: "Raleway";
+  min-height:100vh;
+  font:400 16px/1.5 "Raleway","Font Fallback",sans-serif;
   margin: 0;
-  line-height: 24px;
+  line-height:1.5;
   color: #313030;
 }
 
