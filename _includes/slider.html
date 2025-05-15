@@ -51,7 +51,10 @@
         <div class="slide">
           <img src="{{ img.image }}"
                alt="{{ img.alt | default:'' }}"
-               loading="lazy">
+               loading="lazy"
+               width="{{ w }}"
+               height="{{ h }}"
+               >
         </div>
       {% endfor %}
     {% endfor %}
