@@ -31,9 +31,6 @@ h2,h3,h4,h5,h6, span{
 }
 
 .nav-container {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   color: #fff;
   background-color: rgb(255, 255, 255);
 }
@@ -444,7 +441,7 @@ p {
   justify-content: center;
   margin: auto;
   max-width: 900px;
-  padding: 12px;
+  padding: 30px;
   gap: 30px;
 }
 
