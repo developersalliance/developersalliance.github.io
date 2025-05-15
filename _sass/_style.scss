@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Oswald-Heavy";
-  src: url("/assets/fonts/Oswald-Heavy.woff2")  format("woff");  
+  src: url("/assets/fonts/Oswald-Heavy.woff2")  format("woff2");  
   font-display: swap;
   font-weight: 300;
   font-style: normal;
@@ -11,6 +11,14 @@
   src: url("/assets/fonts/Oswald-Light.woff2") format("woff2");
   font-display: swap;
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 300;   
   font-style: normal;
 }
 
@@ -88,7 +96,7 @@ a.logo-class {
 
 body {
   font-weight: 400;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway";
   margin: 0;
   line-height: 24px;
   color: #313030;
