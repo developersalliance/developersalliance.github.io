@@ -134,6 +134,7 @@ body {
 
 .header {
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .mb17 {
@@ -704,5 +705,9 @@ section.seperation-redline.bg-secondary
   .header.center
   .center {
     align-items: baseline;
+  }
+
+  .header {
+   gap: unset;
   }
 }
