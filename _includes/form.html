@@ -17,7 +17,7 @@
 {% elsif pageform.form_engine == 'formbucket' %}
     <form id="{{ page.url | slugify }}" class="form autofill" method="POST" action="{{ pageform.to }}">
 {% elsif pageform.form_engine == 'api.web3forms.com/submit' %}       
-    <form id="{{ page.url | slugify }}" class="form autofill" method="POST" action="{{ pageform.to }}">
+    <form id="{{ page.url | slugify }}" class="form autofill" method="POST" action="{{ pageform.redirect }}">
 {% endif %}
 
     <input type="text" name="_gotcha" style="display:none" />
@@ -52,6 +52,7 @@
         {% elsif item.input_type == 'html' %}
             {{ item.placeholder }}
         {% elsif item.input_type == 'submit' %}
+        <div class="h-captcha" data-captcha="true" data-lang="en" data-size="compact"></div>
         <div>
             <input type="{{ item.input_type }}" value="{{ item.placeholder }}" class="btn btn-primary process__cta margin-none" />
         </div>
