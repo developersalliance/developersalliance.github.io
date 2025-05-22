@@ -3,8 +3,10 @@ $(document).ready(function() {
       $('.module-group').toggleClass('active');
     });
 
-    window.onload = function() {
-      $("form").find('input[type="text"], input[type="email"], textarea').val('');
-    };
-  });
+      $("form").on("submit", function () {
+        setTimeout(() => {
+          $(this).trigger("reset"); 
+        }, 900);
+    });
+});
 
