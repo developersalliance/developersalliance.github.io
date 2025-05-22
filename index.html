@@ -3,10 +3,10 @@ layout: default
 title:  "Developers Alliance | Magento and ecommerce developers"
 
 forms:
-  - to: /
+  - to: f/movdzwwp
     subject: New submission!
-    redirect: https://api.web3forms.com/submit
-    form_engine: api.web3forms.com/submit
+    redirect: /
+    form_engine: formspree
     placeholders: true
     fields: 
       - name: name
@@ -25,6 +25,9 @@ forms:
         input_type: submit
         placeholder: Submit form
         required: true
+      - name: captcha
+        input_type: recaptcha
+        placeholder: 0x4AAAAAABeQJ-ZjpRcYEMu0  
 carousels:
   - images: 
       - image: https://images.weserv.nl/?url=developersalliance.github.io/assets/Img/slider-magento-centered.webp&w=467&h=233&output=webp&q=100
@@ -379,7 +382,7 @@ carousels:
                 </p>
             </div>
             <div class="col-sm-6 col-md-5 col-md-offset-1">
-                {% include form.html form="1" access_key="8ae27624-4a9d-4f31-9ccc-b939534003e0" %}
+                {% include form.html form="1" %}
             </div>  
         </div>
     </section>

@@ -16,12 +16,9 @@
         <input type="hidden" name="_next" value="{{ site.url }}{{ pageform.redirect }}" />
 {% elsif pageform.form_engine == 'formbucket' %}
     <form id="{{ page.url | slugify }}" class="form autofill" method="POST" action="{{ pageform.to }}">
-{% elsif pageform.form_engine == 'api.web3forms.com/submit' %}       
-    <form id="{{ page.url | slugify }}" class="form autofill" method="POST" action="{{ pageform.redirect }}">
 {% endif %}
 
     <input type="text" name="_gotcha" style="display:none" />
-    <input type="hidden" name="access_key" value="{{ include.access_key }}" />
     <input type="hidden" name="_subject" value="{{ pageform.subject }}" />
 
     {% for item in pageform.fields %}
@@ -46,13 +43,12 @@
                 {% if pageform.form_engine == 'netlify' %}
                     <div data-netlify-recaptcha></div>
                 {% else %}
-                    <div class="g-recaptcha" data-sitekey="{{ item.placeholder }}"></div>
+                    <div class="cf-turnstile" data-sitekey="{{ item.placeholder }}" ></div>
                 {% endif %}
             </div>
         {% elsif item.input_type == 'html' %}
             {{ item.placeholder }}
         {% elsif item.input_type == 'submit' %}
-        <div class="h-captcha" data-captcha="true" data-lang="en" data-size="compact"></div>
         <div>
             <input type="{{ item.input_type }}" value="{{ item.placeholder }}" class="btn btn-primary process__cta margin-none" />
         </div>
