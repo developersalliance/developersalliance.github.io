@@ -129,12 +129,14 @@
     <meta name="keywords" content="magento, developers, support, ecommerce, migration, magento 2, adobe commerce, hyva, reactjs, magento docker, magento development, developers alliance, developers-alliance, developersalliance, developers alliance llc, developers alliance georgia, developers alliance">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml" />
+    <link rel="canonical" href="{{ site.url }}" />
     <link rel="icon" href="{{ site.baseurl }}/assets/Img/logo-light.webp">
     <link rel="preload" href="{{ site.baseurl }}/assets/css/main.css" as="style">
     <link rel="preload" href="{{ site.baseurl }}/assets/fonts/Oswald-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ site.baseurl }}/assets/fonts/Oswald-Heavy.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-    <title>{{ page.title }}</title>
+    <title>{% if page.title %}{{ page.title }} | Developers Alliance{% else %}Developers Alliance{% endif %}</title>
   </head>
   <body>
     {% include navigation.html %}
@@ -143,7 +145,6 @@
     <script src="{{ site.baseurl }}/assets/js/jquery-3.7.1.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/script.js"></script>
     <script src="https://widget.clutch.co/static/js/widget.js"></script>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLZZN4LZ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </body>
