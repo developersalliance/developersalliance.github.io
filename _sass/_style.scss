@@ -599,6 +599,19 @@ section.seperation-redline.bg-secondary
   opacity: 1;
 }
 
+.contact {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+}
+
+.contact-text {
+  margin: 24px 0;
+}
+
 @media (max-width: 770px) {
   .nav-bar {
     padding: 10px;
