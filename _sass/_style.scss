@@ -569,7 +569,6 @@ section.seperation-redline.bg-secondary
 .footer-menu {
   padding: 0;
   margin: 0;
-  grid-area: 1 / 1 / 2 / 4; 
   list-style: none;
 }
 
@@ -578,7 +577,7 @@ section.seperation-redline.bg-secondary
 }
 
 .inner-link {
-  font-size: 11px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -594,7 +593,12 @@ section.seperation-redline.bg-secondary
 
 .footer-col.logo {
   display: flex;
+  grid-area: 1;
   justify-content: center;
+}
+
+.c-llc {
+  font-size: 20px;
 }
 
 .logo-img {
@@ -610,6 +614,7 @@ section.seperation-redline.bg-secondary
   color: #fff;
   opacity: 0.5;
   font-size: 14px;
+  grid-area: 2 / 1 / 2 / 4;
 }
 
 .footer-col.social .social-list {
@@ -617,6 +622,7 @@ section.seperation-redline.bg-secondary
   justify-content: center;
   gap: 20px;
   padding: 0;
+  font-size: 20px;
   margin: 0;
   list-style: none;
 }
