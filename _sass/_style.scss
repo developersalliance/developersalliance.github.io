@@ -22,6 +22,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 300;   
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/assets/fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 300;   
+  font-display: swap;
+  font-style: normal;
+}
+
 html{overflow-y:scroll}
 
 .seperation-redline {
@@ -31,9 +47,15 @@ html{overflow-y:scroll}
 h1 { font-family: "Oswald-Heavy"; }
 
 h2,h3,h4,h5,h6, span{ 
-  font-family: "Oswald-Light"; 
+  font-family: "Montserrat"; 
   font-size: 32px;
   line-height: 40px;
+}
+
+.process.seperation-redline,
+.container-content,
+.partner-content {
+  padding: 50px;
 }
 
 .sr-only {
@@ -93,7 +115,7 @@ a.logo-class {
 
 body {
   min-height:100vh;
-  font:400 16px/1.5 "Raleway","Font Fallback",sans-serif;
+  font: 400 16px/1.5 "Lato-Regular";
   margin: 0;
   line-height:1.5;
   color: #313030;
@@ -133,13 +155,13 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  align-items: center;
   justify-items: center;
+  margin-top: 109px;
 }
 
 .header {
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 14px;
 }
 
 .mb17 {
@@ -156,13 +178,13 @@ body {
 }
 
 .col-sm-12.text-center > img{
-  max-height: 100px;
+  max-height: 80px;
   width: auto;
 }
 
 .bold.uppercase {
 color: #292929;
-font-size: 16px;
+font-size: 20px;
 line-height: 24px;
 font-weight: 600;
 text-transform: uppercase;
@@ -196,6 +218,12 @@ main .container-content .carousel__control.carousel__control--forward {
   background: #313030;
 }
 
+.grid-container-3 {
+  justify-self: flex-start;
+  display: grid;
+  gap: 20px;
+}
+
 .grid-container,
 .grid-container-3 {
   max-width: 250px;
@@ -204,6 +232,8 @@ main .container-content .carousel__control.carousel__control--forward {
 .grid-container {
   text-align: end;
   justify-self: end;
+  display: grid;
+  gap: 20px;
 }
 
 .process {
@@ -284,7 +314,7 @@ main .container-content .carousel__control.carousel__control--forward {
 
 .bg-secondary {
   background: #f8f8f8;
-  padding: 20px;
+  padding: 40px;
 }
 
 .container {
@@ -355,7 +385,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  padding: 30px;
+  padding: 60px;
 }
 
 .text-center.mb-4 {
@@ -364,7 +394,7 @@ p {
 
 .row.align-items-center {
   display: flex;
-  padding:35px;
+  padding: 55px;
   gap: 30px;
 }
 
@@ -399,7 +429,7 @@ a.process__cta {
   display: grid;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 5rem;
   place-items: center;      
   gap: 1.5rem;
   grid-template-rows: auto 1fr;
