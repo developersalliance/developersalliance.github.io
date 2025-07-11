@@ -784,3 +784,471 @@ section.seperation-redline.bg-secondary
    gap: unset;
   }
 }
+
+
+//portfolio page
+
+/* ───────────────────────────  GLOBAL  ─────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ───────── HERO ───────── */
+.portfolio-hero-img-wrap {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0;
+}
+
+
+
+.portfolio-hero-img {
+  width: 100%;
+  box-shadow: 0 8px 36px rgba(0, 0, 0, 0.17);
+  object-fit: cover;
+  min-height: 240px;
+  opacity: 0.96;
+  filter: brightness(0.5);
+}
+
+.portfolio-hero-title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.22), 0 1px 0 #222;
+  pointer-events: none;
+}
+
+.portfolio-hero-title-overlay h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: "Montserrat";
+  margin: 0;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.portfolio-hero-title-overlay p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0.7em;
+}
+
+.portfolio-hero-second-title-overlay {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.22), 0 1px 0 #222;
+  pointer-events: auto;
+}
+
+.portfolio-hero-second-title-overlay h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: "Montserrat";
+  margin: 0;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.portfolio-hero-second-title-overlay p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0.7em;
+}
+
+/* ───────── CLIENT & DIAGNOSIS blocks (unchanged) ───────── */
+.portfolio-client-row,
+.portfolio-diagnosis-row {
+  width: 100%;
+  min-height: 420px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.portfolio-client-left,
+.portfolio-client-right,
+.portfolio-diagnosis-left,
+.portfolio-diagnosis-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+
+.portfolio-client-row {
+  .portfolio-client-left {
+    background: #fff;
+    padding: 2.2rem 6rem;
+    border-radius: 0 0 0 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  }
+}
+
+
+.portfolio-client-right {
+  background: #f7f7f7;
+  align-items: stretch;
+  min-height: 340px;
+}
+
+.portfolio-client-img-full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 340px;
+  opacity: 0.97;
+}
+
+.portfolio-client-left h2 {
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+
+.portfolio-client-left p {
+  font-size: 1.5rem;
+  color: #212121;
+  line-height: 1.6;
+  font-family: "Lato-Regular";
+}
+
+.portfolio-diagnosis-left {
+  background: #444;
+  align-items: center;
+}
+
+.portfolio-diagnosis-row {
+  .portfolio-diagnosis-right {
+    background: #fff;
+    padding: 2.2rem 6rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  }
+}
+
+
+
+.portfolio-diagnosis-right p {
+  font-size: 1.5rem;
+  color: #212121;
+  line-height: 1.6;
+  font-family: "Lato-Regular";
+}
+
+/* ───────── WORK SCHEDULE (unchanged) ───────── */
+.portfolio-schedule-block {
+  background: #fff;
+  padding: 6rem 0;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.portfolio-schedule-block h2 {
+  font-size: 2.4rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+
+.portfolio-diagnosis-right h2 {
+  font-size: 2.4rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+
+.portfolio-stage-box-content h3 {
+  font-size: 1.75rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+
+.portfolio-stage-box-content  p{
+  font-size: 1.1rem;
+  color: #212121;
+  line-height: 1.6;
+  font-family: "Lato-Regular";
+}
+
+.portfolio-diagnosis-right p {
+  font-size: 1.5rem;
+  color: #212121;
+  line-height: 1.6;
+  font-family: "Lato-Regular";
+}
+
+.portfolio-schedule-block h2 {
+  font-size: 2.4rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+
+.portfolio-schedule-block p {
+  font-size: 1.5rem;
+  color: #212121;
+  line-height: 1.6;
+  font-family: "Lato-Regular";
+}
+
+/* ───────────────────  AUDIT STAGES  (FADE VERSION) ─────────────────── */
+.fade-slide {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 80px;
+}
+
+.fade-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: center center / cover no-repeat;
+  opacity: 0;
+  transition: opacity 0.35s linear;
+  filter: brightness(1.05) saturate(1.15);
+  pointer-events: none;
+}
+
+.fade-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.15;
+}
+
+.portfolio-stage-overlay-box-right,
+.portfolio-stage-overlay-box-left {
+  position: absolute;
+  top: 50%;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 36px rgba(0, 0, 0, 0.16);
+  padding: 4.5rem 2.3rem;
+  min-width: 320px;
+  max-width: 450px;
+  width: 95vw;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+
+.portfolio-stage-overlay-box-right {
+  right: 10%;
+}
+
+.portfolio-stage-overlay-box-left {
+  left: 10%;
+}
+
+
+.portfolio-stage-box-content p {
+  font-size: 1.04rem;
+  line-height: 1.5;
+  color: #222;
+  margin: 0;
+}
+
+/* Hide the inline <img> but keep space so section stays 100vh */
+.audit-img {
+  width: 100%;
+  height: auto;
+  min-height: 380px;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.title-mobile {
+  display: none;
+}
+
+
+
+@media (max-width: 1200px) {
+  .portfolio-hero-title-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .portfolio-hero-second-title-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .portfolio-stage-overlay-box-right, .portfolio-stage-overlay-box-left {
+    position: absolute;
+    top: 50%;
+    background: #fff;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 2.2rem 6rem;
+    min-width: none;
+    max-width: none;
+    width: 95vw;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateY(-50%);
+  }
+
+
+  .portfolio-stage-box-content p {
+    font-size: 1.5rem;
+    color: #212121;
+    line-height: 1.6;
+    font-family: "Lato-Regular";
+  }
+
+  .fade-slide {
+    height: auto;
+    display: block;
+    padding-bottom: 2rem;
+  }
+
+  .fade-bg {
+    position: relative;
+    opacity: 1 !important;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .audit-img {
+    display: none;
+  }
+
+  .portfolio-stage-overlay-box-right,
+  .portfolio-stage-overlay-box-left {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    margin: 1rem auto 2rem auto;
+  }
+
+
+  .portfolio-client-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-diagnosis-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-schedule-block h2 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-stage-box-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-stage-box-content p {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-schedule-block p {
+    font-size: 1.2rem;
+  }
+
+
+  .portfolio-client-left p {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-diagnosis-right p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .portfolio-hero-title-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-page-content {
+    .row>* {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+
+  .portfolio-hero-second-title-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .title-screen {
+    display: none;
+  }
+
+  .title-mobile {
+    display: block;
+  }
+
+  .portfolio-client-row {
+    .portfolio-client-left {
+      padding: 2.2rem 2.2rem;
+    }
+  }
+
+  .portfolio-diagnosis-row {
+    .portfolio-diagnosis-right {
+      padding: 2.2rem 2.2rem;
+    }
+  }
+
+  .portfolio-stage-overlay-box-right, .portfolio-stage-overlay-box-left {
+    padding: 2.2rem 2.2rem;
+  }
+}
+
+
+
+
